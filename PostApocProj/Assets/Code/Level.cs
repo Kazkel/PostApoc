@@ -11,6 +11,7 @@ public class Level : MonoBehaviour {
 	public Transform floorTile;
 	public Transform wallTile;
 	public Transform tableTile;
+	public Transform doorTile;
 	
 	private Color[] tileColours;
 
@@ -19,6 +20,7 @@ public class Level : MonoBehaviour {
 	public Color wallColour;
 	public Color spawnPointColour;
 	public Color tableColour;
+	public Color doorColour;
 	
 	//the texture that defines the layout of instantiation of the level
 	public Texture2D levelTexture;
@@ -69,6 +71,11 @@ public class Level : MonoBehaviour {
 				if(tileColours[x+y*levelWidth] == tableColour) 
 				{
 					Instantiate(tableTile, new Vector3(x, y), Quaternion.identity); 
+				}
+
+				if(tileColours[x+y*levelWidth] == doorColour) 
+				{
+					Instantiate(doorTile, new Vector3(x, y), Quaternion.identity); 
 				}
 			}
 		}

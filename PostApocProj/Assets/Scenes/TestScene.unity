@@ -129,7 +129,8 @@ Prefab:
       propertyPath: m_Interpolate
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6000000, guid: bf610ff0441ac4b75b5fa828ef90f013, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: bf610ff0441ac4b75b5fa828ef90f013, type: 2}
   m_RootGameObject: {fileID: 857769471}
   m_IsPrefabParent: 0
@@ -345,6 +346,62 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 857769473}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: floorColour.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: floorColour.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: floorColour.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: wallColour.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: wallColour.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: wallColour.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: spawnPointColour.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: spawnPointColour.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: spawnPointColour.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: doorColour.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: doorColour.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: doorColour.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: doorTile
+      value: 
+      objectReference: {fileID: 400004, guid: 7df90ac739e572e4188c44fcfbdf35c6, type: 2}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: levelTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: 50cb87f4ea127ff4cbaebb6ad1f87b35, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
   m_RootGameObject: {fileID: 1854770858}
@@ -381,11 +438,13 @@ MonoBehaviour:
   floorTile: {fileID: 400000, guid: 81cf8c86f802540059b70bab1c7bd57e, type: 2}
   wallTile: {fileID: 400000, guid: a554116f25ffd41afbe0d81034206db5, type: 2}
   tableTile: {fileID: 400000, guid: 5092255bbab0b495497439020d262b9b, type: 2}
-  floorColour: {r: 1, g: 0, b: 0, a: 1}
-  wallColour: {r: 0, g: 0, b: 1, a: 1}
-  spawnPointColour: {r: 0, g: 0, b: 0, a: 1}
+  doorTile: {fileID: 400004, guid: 7df90ac739e572e4188c44fcfbdf35c6, type: 2}
+  floorColour: {r: 1, g: 1, b: 1, a: 1}
+  wallColour: {r: 0, g: 0, b: 0, a: 1}
+  spawnPointColour: {r: 0, g: 0, b: 1, a: 1}
   tableColour: {r: 0, g: 1, b: 0, a: 1}
-  levelTexture: {fileID: 2800000, guid: b5bcd9f2c2b1e4649b26356df6644829, type: 3}
+  doorColour: {r: 1, g: 0, b: 0, a: 0}
+  levelTexture: {fileID: 2800000, guid: 50cb87f4ea127ff4cbaebb6ad1f87b35, type: 3}
   player: {fileID: 857769473}
 --- !u!4 &1854770860
 Transform:
@@ -408,7 +467,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2023577390}
   - 212: {fileID: 2023577389}
-  - 60: {fileID: 2023577387}
+  - 61: {fileID: 2023577387}
   m_Layer: 0
   m_Name: CharPLCHLDR
   m_TagString: Untagged
@@ -416,27 +475,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!60 &2023577387
-PolygonCollider2D:
+--- !u!61 &2023577387
+BoxCollider2D:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6000000, guid: bf610ff0441ac4b75b5fa828ef90f013,
-    type: 2}
-  m_PrefabInternal: {fileID: 298026372}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2023577386}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Poly:
-    m_Paths:
-    - - {x: -.28125, y: .5}
-      - {x: -.3125, y: .46875}
-      - {x: -.3125, y: -.5}
-      - {x: .1875, y: -.5}
-      - {x: .1875, y: .25}
-      - {x: .09375, y: .5}
-    - - {x: -.0625, y: -.3125}
-      - {x: -.09375, y: -.34375}
-      - {x: -.0625, y: -.40625}
+  m_Size: {x: .389999986, y: .899999976}
+  m_Center: {x: -.0500000007, y: -.0199999996}
 --- !u!212 &2023577389
 SpriteRenderer:
   m_ObjectHideFlags: 0
