@@ -207,7 +207,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.6996336
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -401,7 +401,71 @@ Prefab:
     - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
       propertyPath: levelTexture
       value: 
-      objectReference: {fileID: 2800000, guid: 50cb87f4ea127ff4cbaebb6ad1f87b35, type: 3}
+      objectReference: {fileID: 2800000, guid: 5e21af8465c49d14b871ba744578e421, type: 3}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: doorColour.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: verticalDoorColour.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: verticalDoorColour.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: verticalDoorColour.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: verticalDoorColour.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: horizontalDoorColour.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: horizontalDoorColour.g
+      value: .501960814
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: horizontalDoorColour.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: horizontalDoorColour.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: tableColour.r
+      value: .180392161
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: tableColour.g
+      value: .258823544
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: tableColour.b
+      value: .627451003
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: horizontalDoorTile
+      value: 
+      objectReference: {fileID: 400004, guid: dee539949f5a95046851eaea47270ed7, type: 2}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: verticalDoorTile
+      value: 
+      objectReference: {fileID: 400004, guid: 2d8281079f2124244bd0b722d9cb9cd9, type: 2}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: chestTile
+      value: 
+      objectReference: {fileID: 400000, guid: 81cf8c86f802540059b70bab1c7bd57e, type: 2}
+    - target: {fileID: 11400000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
+      propertyPath: wallTile
+      value: 
+      objectReference: {fileID: 400002, guid: a554116f25ffd41afbe0d81034206db5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6c2dc1e5a1e764ff8b136c9403a9911e, type: 2}
   m_RootGameObject: {fileID: 1854770858}
@@ -436,15 +500,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floorTile: {fileID: 400000, guid: 81cf8c86f802540059b70bab1c7bd57e, type: 2}
-  wallTile: {fileID: 400000, guid: a554116f25ffd41afbe0d81034206db5, type: 2}
+  wallTile: {fileID: 400002, guid: a554116f25ffd41afbe0d81034206db5, type: 2}
   tableTile: {fileID: 400000, guid: 5092255bbab0b495497439020d262b9b, type: 2}
-  doorTile: {fileID: 400004, guid: 7df90ac739e572e4188c44fcfbdf35c6, type: 2}
+  horizontalDoorTile: {fileID: 400004, guid: dee539949f5a95046851eaea47270ed7, type: 2}
+  verticalDoorTile: {fileID: 400004, guid: 2d8281079f2124244bd0b722d9cb9cd9, type: 2}
+  chestTile: {fileID: 400000, guid: 81cf8c86f802540059b70bab1c7bd57e, type: 2}
   floorColour: {r: 1, g: 1, b: 1, a: 1}
   wallColour: {r: 0, g: 0, b: 0, a: 1}
   spawnPointColour: {r: 0, g: 0, b: 1, a: 1}
-  tableColour: {r: 0, g: 1, b: 0, a: 1}
-  doorColour: {r: 1, g: 0, b: 0, a: 0}
-  levelTexture: {fileID: 2800000, guid: 50cb87f4ea127ff4cbaebb6ad1f87b35, type: 3}
+  tableColour: {r: .180392161, g: .258823544, b: .627451003, a: 1}
+  horizontalDoorColour: {r: 0, g: .501960814, b: 0, a: 1}
+  verticalDoorColour: {r: 1, g: 0, b: 0, a: 1}
+  chestColour: {r: 0, g: 0, b: 0, a: 0}
+  levelTexture: {fileID: 2800000, guid: 5e21af8465c49d14b871ba744578e421, type: 3}
   player: {fileID: 857769473}
 --- !u!4 &1854770860
 Transform:

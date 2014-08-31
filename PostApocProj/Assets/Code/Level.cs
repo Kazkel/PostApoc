@@ -11,7 +11,9 @@ public class Level : MonoBehaviour {
 	public Transform floorTile;
 	public Transform wallTile;
 	public Transform tableTile;
-	public Transform doorTile;
+	public Transform horizontalDoorTile;
+	public Transform verticalDoorTile;
+	public Transform chestTile;
 	
 	private Color[] tileColours;
 
@@ -20,8 +22,10 @@ public class Level : MonoBehaviour {
 	public Color wallColour;
 	public Color spawnPointColour;
 	public Color tableColour;
-	public Color doorColour;
-	
+	public Color horizontalDoorColour;
+	public Color verticalDoorColour;
+	public Color chestColour;
+
 	//the texture that defines the layout of instantiation of the level
 	public Texture2D levelTexture;
 	
@@ -56,11 +60,13 @@ public class Level : MonoBehaviour {
 				{
 					Instantiate(floorTile, new Vector3(x, y), Quaternion.identity); //instantiate floortile prefab
 				}
+
 				if(tileColours[x+y*levelWidth] == wallColour) //this repeats for all current prefabs with colour set up
 				{
 					Instantiate(wallTile, new Vector3(x, y), Quaternion.identity);
 					
 				}
+
 				if(tileColours[x+y*levelWidth] == spawnPointColour)//if colour equals spawn point, instantiate floor tile
 				{
 					Instantiate(floorTile, new Vector3(x, y), Quaternion.identity);
@@ -68,14 +74,26 @@ public class Level : MonoBehaviour {
 					player.transform.position = pos; // move player position to "pos"
 					
 				}
+
 				if(tileColours[x+y*levelWidth] == tableColour) 
 				{
 					Instantiate(tableTile, new Vector3(x, y), Quaternion.identity); 
 				}
 
-				if(tileColours[x+y*levelWidth] == doorColour) 
+				if(tileColours[x+y*levelWidth] == horizontalDoorColour) 
 				{
-					Instantiate(doorTile, new Vector3(x, y), Quaternion.identity); 
+					Instantiate(horizontalDoorTile, new Vector3(x, y), Quaternion.identity); 
+				}
+
+				if(tileColours[x+y*levelWidth] == verticalDoorColour) 
+				{
+					Instantiate(verticalDoorTile, new Vector3(x, y), Quaternion.identity); 
+				}
+
+
+				if(tileColours[x+y*levelWidth] == chestColour) 
+				{
+					Instantiate(chestTile, new Vector3(x, y), Quaternion.identity); 
 				}
 			}
 		}
