@@ -315,7 +315,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: e6c37c11578ae497d8611ddcd329828b, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -430,11 +430,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 857769471}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87b54b18bce5544c5b8699f8bcf49abf, type: 3}
+  m_Script: {fileID: 11500000, guid: b1110ff3d284cc9498dd1db9581eaff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grit: {fileID: 8300000, guid: ef4b37eee760b4c24af87d92cb512e7f, type: 3}
-  rouguelike1: {fileID: 8300000, guid: e6c37c11578ae497d8611ddcd329828b, type: 3}
+  songs:
+  - {fileID: 8300000, guid: ef4b37eee760b4c24af87d92cb512e7f, type: 3}
+  - {fileID: 8300000, guid: e6c37c11578ae497d8611ddcd329828b, type: 3}
 --- !u!1001 &1760419570
 Prefab:
   m_ObjectHideFlags: 0
