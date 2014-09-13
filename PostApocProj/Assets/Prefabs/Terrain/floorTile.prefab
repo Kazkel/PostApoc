@@ -9,7 +9,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 61: {fileID: 6100000}
-  - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: floorTile
   m_TagString: Untagged
@@ -69,20 +68,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05f444bd2a6eb403eb4541faafa3b549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  opaqueFow: {fileID: 400000, guid: 3e71f76c75a6143d2bbf0140ab01e445, type: 2}
-  translucentFow: {fileID: 400000, guid: a7a13457d45e1489cbec9c64eb40e7ed, type: 2}
-  transparentFow: {fileID: 400000, guid: 4f9ddd7bdb2424a2fa246923a6b0bf31, type: 2}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -95,7 +80,7 @@ SpriteRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 489eefc5effee4d168a6e801ea5ab00c, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
