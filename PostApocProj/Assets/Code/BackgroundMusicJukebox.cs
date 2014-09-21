@@ -5,6 +5,7 @@ public class BackgroundMusicJukebox : MonoBehaviour {
 	public AudioClip[] songs;
 	int currentSong = 0;
 
+
 	// Use this for initialization
 	void Start () {
 	
@@ -25,14 +26,18 @@ public class BackgroundMusicJukebox : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.M)) {
 
 			audio.Stop();
-			currentSong++;
-			audio.clip =songs[currentSong];
-
-			audio.Play();
 
 		}
 
-
-
+		if (Input.GetKeyDown (KeyCode.V)) {
+		
+			if (audio.mute)
+				audio.mute = false;
+			else
+				audio.mute = true;
+		}
+		
+		
+		
 	}
 }
