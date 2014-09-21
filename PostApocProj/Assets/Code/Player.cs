@@ -3,26 +3,26 @@ using System.Collections;
 
 public class Player : Entity {
 
-	// Use this for initialization
-	void Start () {
+	public Vector2 speed = new Vector2(25, 25);
 	
+	private Vector2 movement;
+	
+	void Update()
+	{
+		float inputX = Input.GetAxis("Horizontal");
+		float inputY = Input.GetAxis("Vertical");
+		
+		movement = new Vector2(speed.x * inputX, speed.y * inputY);
+		
+		if (inputX != 0 && inputY != 0) {
+			movement *= 0.707106781f;
+		}
 	}
 	
-	// Update is called once per frame
-	void Update () {
-
-		//when key is pressed, apply force to rigidbody
-		if(Input.GetKey(KeyCode.W)) {
-			rigidbody2D.transform.position += Vector3.up * speed * Time.deltaTime;
-		}
-		if(Input.GetKey(KeyCode.S)) {
-			rigidbody2D.transform.position += Vector3.down * speed * Time.deltaTime;
-		}
-		if(Input.GetKey(KeyCode.A)) {
-			rigidbody2D.transform.position += Vector3.left * speed * Time.deltaTime;
-		}
-		if(Input.GetKey(KeyCode.D)) {
-			rigidbody2D.transform.position += Vector3.right * speed * Time.deltaTime;
-		}
+	void FixedUpdate()
+	{
+		rigidbody2D.velocity = movement;
+		//which one is preferrable?
+		//rigidbody2D.AddForce (movement);
 	}
 }

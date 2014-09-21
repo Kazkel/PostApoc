@@ -40,20 +40,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floorTile: {fileID: 400000, guid: 81cf8c86f802540059b70bab1c7bd57e, type: 2}
-  wallTile: {fileID: 400000, guid: a554116f25ffd41afbe0d81034206db5, type: 2}
+  wallTile: {fileID: 400002, guid: a554116f25ffd41afbe0d81034206db5, type: 2}
   tableTile: {fileID: 400000, guid: 5092255bbab0b495497439020d262b9b, type: 2}
-  horizontalDoorTile: {fileID: 0}
-  verticalDoorTile: {fileID: 0}
-  chestTile: {fileID: 0}
-  floorColour: {r: 1, g: 0, b: 0, a: 1}
-  wallColour: {r: 0, g: 0, b: 1, a: 1}
-  spawnPointColour: {r: 0, g: 0, b: 0, a: 1}
-  tableColour: {r: 0, g: 1, b: 0, a: 1}
-  horizontalDoorColour: {r: 0, g: 0, b: 0, a: 0}
-  verticalDoorColour: {r: 0, g: 0, b: 0, a: 0}
+  horizontalDoorTile: {fileID: 400004, guid: dee539949f5a95046851eaea47270ed7, type: 2}
+  verticalDoorTile: {fileID: 400004, guid: 2d8281079f2124244bd0b722d9cb9cd9, type: 2}
+  chestTile: {fileID: 400000, guid: 81cf8c86f802540059b70bab1c7bd57e, type: 2}
+  upLadderTile: {fileID: 400004, guid: 47afdb09b58ec764fa31edf1f5394955, type: 2}
+  downLadderTile: {fileID: 400004, guid: 11f50905c58c2c548bb69f8219f0616b, type: 2}
+  floorColour: {r: 1, g: 1, b: 1, a: 1}
+  wallColour: {r: 0, g: 0, b: 0, a: 1}
+  spawnPointColour: {r: 1, g: 1, b: 0, a: 1}
+  tableColour: {r: .180392161, g: .258823544, b: .627451003, a: 1}
+  horizontalDoorColour: {r: 0, g: .501960814, b: 0, a: 1}
+  verticalDoorColour: {r: 1, g: 0, b: 0, a: 1}
   chestColour: {r: 0, g: 0, b: 0, a: 0}
-  levelTexture: {fileID: 2800000, guid: b5bcd9f2c2b1e4649b26356df6644829, type: 3}
-  player: {fileID: 0}
+  upLadderColour: {r: 1, g: .647058845, b: 0, a: 1}
+  downLadderColour: {r: 0, g: 0, b: 1, a: 1}
+  levelTexture: {fileID: 2800000, guid: c6e84bd0325693f46b3c5615e8426e70, type: 3}
+  player: {fileID: 11400000, guid: bf610ff0441ac4b75b5fa828ef90f013, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

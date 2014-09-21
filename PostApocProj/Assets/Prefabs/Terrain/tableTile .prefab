@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400000}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: 'tableTile '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ GameObject:
   - 4: {fileID: 400002}
   - 212: {fileID: 21200000}
   - 61: {fileID: 6100000}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: table wooden
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400004}
   - 212: {fileID: 21200002}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: ConcreteFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

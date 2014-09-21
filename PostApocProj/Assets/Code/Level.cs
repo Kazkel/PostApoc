@@ -14,6 +14,8 @@ public class Level : MonoBehaviour {
 	public Transform horizontalDoorTile;
 	public Transform verticalDoorTile;
 	public Transform chestTile;
+	public Transform upLadderTile;
+	public Transform downLadderTile;
 	
 	private Color[] tileColours;
 
@@ -25,6 +27,8 @@ public class Level : MonoBehaviour {
 	public Color horizontalDoorColour;
 	public Color verticalDoorColour;
 	public Color chestColour;
+	public Color upLadderColour;
+	public Color downLadderColour;
 
 	//the texture that defines the layout of instantiation of the level
 	public Texture2D levelTexture;
@@ -90,10 +94,19 @@ public class Level : MonoBehaviour {
 					Instantiate(verticalDoorTile, new Vector3(x, y), Quaternion.identity); 
 				}
 
-
 				if(tileColours[x+y*levelWidth] == chestColour) 
 				{
 					Instantiate(chestTile, new Vector3(x, y), Quaternion.identity); 
+				}
+
+				if(tileColours[x+y*levelWidth] == upLadderColour) 
+				{
+					Instantiate(upLadderTile, new Vector3(x, y), Quaternion.identity); 
+				}
+
+				if(tileColours[x+y*levelWidth] == downLadderColour) 
+				{
+					Instantiate(downLadderTile, new Vector3(x, y), Quaternion.identity); 
 				}
 			}
 		}
